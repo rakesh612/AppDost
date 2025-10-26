@@ -1,7 +1,7 @@
 // src/components/common/PageLoader.jsx
 import React, { useState, useEffect } from 'react';
 import { COMPANY_INFO } from '../../utils/Constants.jsx';
-import logo from '../../assets/logo.png';
+import logo from '/assets/appdost-logo.png'
 
 
 const PageLoader = () => {
