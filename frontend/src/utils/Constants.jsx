@@ -16,13 +16,12 @@ export const COMPANY_INFO = {
   workingHours: 'Mon - Sat: 9:00 AM - 6:00 PM IST',
 };
 
-// Navigation Links - FIXED: Use proper paths
+// Navigation Links - REMOVED CAREERS
 export const NAV_LINKS = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
   { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Careers', href: '/careers' },
   { name: 'Blog', href: '#blog' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -279,12 +278,13 @@ export const TECHNOLOGIES = [
   { icon: '💙', name: 'TypeScript' },
 ];
 
-// Footer Links
+// Footer Links - REMOVED CAREERS
 export const FOOTER_LINKS = {
   quickLinks: [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
-    { name: 'Careers', href: '/careers' },
+    { name: 'Portfolio', href: '#portfolio' },
     { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
   ],

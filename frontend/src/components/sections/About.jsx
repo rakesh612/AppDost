@@ -268,21 +268,30 @@ const AboutSection = () => {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="/careers"
-                    className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <span>Join Our Team</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="/contact"
-                    className="flex-1 text-center bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    Start Your Project
-                  </a>
-                </div>
+<div className="flex flex-col sm:flex-row gap-3">
+  <a
+    href="#contact"
+    onClick={(e) => {
+      e.preventDefault();
+      const element = document.getElementById('contact');
+      if (element) {
+        const navHeight = 80;
+        const targetPosition = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    }}
+    className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
+  >
+    <span>Start Your Project</span>
+    <ArrowRight className="w-5 h-5" />
+  </a>
+  <a
+    href={`mailto:${COMPANY_INFO.email}`}
+    className="flex-1 text-center bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-slate-200 hover:border-blue-300"
+  >
+    Email Us
+  </a>
+</div>
               </div>
             </div>
           </div>
