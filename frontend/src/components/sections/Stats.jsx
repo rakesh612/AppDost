@@ -63,7 +63,7 @@ const StatsSection = () => {
   };
 
   return (
-    <section 
+    <section id="stats"
       ref={sectionRef}
       className="relative py-12 sm:py-16 lg:py-20 -mt-20 z-20"
     >

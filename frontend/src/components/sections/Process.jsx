@@ -37,7 +37,7 @@ const ProcessSection = () => {
   }, []);
 
   return (
-    <section 
+    <section id="process"
       ref={sectionRef}
       className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden"
     >

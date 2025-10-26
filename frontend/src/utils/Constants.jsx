@@ -1,4 +1,4 @@
-// src/utils/constants.js
+// src/utils/Constants.jsx
 
 // Company Information
 export const COMPANY_INFO = {
@@ -16,15 +16,15 @@ export const COMPANY_INFO = {
   workingHours: 'Mon - Sat: 9:00 AM - 6:00 PM IST',
 };
 
-// Navigation Links
+// Navigation Links - FIXED: Use proper paths
 export const NAV_LINKS = [
-  { name: 'Home', href: '/', active: true },
-  { name: 'About', href: '/src/components/About.jsx' },
-  { name: 'Services', href: '/src/components/Services.jsx' },
-  { name: 'Portfolio', href: '/src/components/Portfolio.jsx' },
-  { name: 'Careers', href: '/src/components/Careers.jsx' },
-  { name: 'Blog', href: '/src/components/Blog.jsx' },
-  { name: 'Contact', href: '/src/components/Contact.jsx' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Careers', href: '/careers' },
+  { name: 'Blog', href: '#blog' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 // Social Media Links
@@ -200,7 +200,8 @@ export const FEATURED_PROJECTS = [
     title: 'BEU Mate - Bihar Engineering',
     category: 'AI-Powered Educational Platform',
     description: 'An AI-powered study companion for B.Tech students offering personalized learning, career guidance, and placement preparation.',
-    image: '/images/beumate-logo.png',
+    image: null,
+    gradient: 'from-blue-500 to-cyan-500',
     technologies: ['React Native', 'Node.js', 'AI/ML'],
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.priyesranjan.beumate',
     websiteLink: 'https://beumate.app/',
@@ -219,7 +220,8 @@ export const FEATURED_PROJECTS = [
     title: 'The Weddings Chapter',
     category: 'Wedding Planning Portal',
     description: 'A premium wedding planning platform connecting couples with top vendors, venues, and services. Features vendor portfolios, booking management, and seamless communication.',
-    image: '/images/TWC Final Logo.jpg',
+    image: null,
+    gradient: 'from-pink-500 to-rose-500',
     technologies: ['PHP', 'Laravel', 'MySQL'],
     websiteLink: 'https://theweddingschapter.com',
   },
@@ -281,18 +283,18 @@ export const TECHNOLOGIES = [
 export const FOOTER_LINKS = {
   quickLinks: [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
+    { name: 'Services', href: '#services' },
     { name: 'Careers', href: '/careers' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'Contact', href: '#contact' },
   ],
   services: [
-    { name: 'Android App Development', href: '/services' },
-    { name: 'Web Development', href: '/services' },
-    { name: 'UI/UX Design', href: '/services' },
-    { name: 'CRM Software', href: '/services' },
-    { name: 'Cloud Solutions', href: '/services' },
-    { name: 'Cybersecurity', href: '/services' },
+    { name: 'Android App Development', href: '#services' },
+    { name: 'Web Development', href: '#services' },
+    { name: 'UI/UX Design', href: '#services' },
+    { name: 'CRM Software', href: '#services' },
+    { name: 'Cloud Solutions', href: '#services' },
+    { name: 'Cybersecurity', href: '#services' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy-policy' },

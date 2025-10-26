@@ -30,7 +30,7 @@ const CTASection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 sm:py-20 lg:py-24">
+    <section id="contact" ref={sectionRef} className="py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl overflow-hidden transition-all duration-1000 ${
