@@ -2,6 +2,7 @@
 import React from 'react';
 import { Mail, Phone, Clock, MapPin, Heart, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import { COMPANY_INFO, FOOTER_LINKS, SOCIAL_LINKS, STATS } from '../../utils/Constants.jsx';
+import logo from '/assets/appdost-logo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,9 +17,13 @@ const Footer = () => {
           <div className="lg:col-span-1">
             {/* Logo */}
             <a href="/" className="inline-flex items-center space-x-3 mb-6 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-                <span className="text-white font-bold text-2xl">A</span>
-              </div>
+                <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+    <img
+      src={logo}
+      alt={`${COMPANY_INFO.name} Logo`}
+      className="w-full h-full object-cover"
+    />
+  </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold">{COMPANY_INFO.name}</span>
                 <span className="text-xs text-slate-400">{COMPANY_INFO.tagline}</span>
