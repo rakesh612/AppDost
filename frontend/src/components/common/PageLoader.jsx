@@ -1,6 +1,8 @@
 // src/components/common/PageLoader.jsx
 import React, { useState, useEffect } from 'react';
 import { COMPANY_INFO } from '../../utils/Constants.jsx';
+import logo from '../../assets/logo.png';
+
 
 const PageLoader = () => {
   const [loading, setLoading] = useState(true);
@@ -51,9 +53,13 @@ const PageLoader = () => {
             <div className="w-32 h-32 rounded-full border-4 border-purple-500/30 absolute animate-ping animation-delay-1000"></div>
             
             {/* Main Logo Circle */}
-            <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-2xl animate-bounce-slow">
-              <span className="text-5xl font-bold text-white animate-pulse">A</span>
-            </div>
+<div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-2xl animate-bounce-slow overflow-hidden">
+  <img
+    src={logo}
+    alt={`${COMPANY_INFO.name} Logo`}
+    className="w-24 h-24 object-contain animate-pulse"
+  />
+</div>
 
             {/* Rotating Border */}
             <div className="absolute inset-0 rounded-full border-t-4 border-blue-500 animate-spin"></div>
