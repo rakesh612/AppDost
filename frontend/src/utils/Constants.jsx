@@ -199,7 +199,7 @@ export const FEATURED_PROJECTS = [
     title: 'BEU Mate - Bihar Engineering',
     category: 'AI-Powered Educational Platform',
     description: 'An AI-powered study companion for B.Tech students offering personalized learning, career guidance, and placement preparation.',
-    image: null,
+    image: '/images/beumate-logo.png',
     gradient: 'from-blue-500 to-cyan-500',
     technologies: ['React Native', 'Node.js', 'AI/ML'],
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.priyesranjan.beumate',
