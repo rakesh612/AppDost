@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // 🔁 Replace with your backend URL
+const socket = io("https://appdost-bvek.onrender.com"); // 🔁 Replace with your backend URL
 
 const ActiveUsers = () => {
   const [userCount, setUserCount] = useState(0);
